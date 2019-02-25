@@ -10,7 +10,6 @@ let bodyParser = require('body-parser');
 sequelize.sync();
 
 app.use(bodyParser.json());
-console.log('this is a breakpoint for line 13');
 app.use(require('./middleware/headers'));
 app.use('/user', User);
 app.use(require('./middleware/validate-session'));
