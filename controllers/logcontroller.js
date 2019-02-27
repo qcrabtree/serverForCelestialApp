@@ -64,7 +64,7 @@ router.get('/:id', function(req, res){
 })
 
 router.put('/:id', function(req, res){
-    let updatePlanetName = req.params.PlanetName;
+    let updatePlanetName = req.body.log.planetName;
     let updateHabitable = req.body.log.habitable;
     let updateDesc = req.body.log.description;
     let updatedImage = req.body.log.image;
